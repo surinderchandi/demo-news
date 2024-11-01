@@ -1,0 +1,6 @@
+<h1>News Articles</h1>
+<ul>
+    {% for article in articles %}
+        <li><a href="{% url 'article_detail' article.slug %}">{{ article.title }}</a></li>
+    {% endfor %}
+</ul>
